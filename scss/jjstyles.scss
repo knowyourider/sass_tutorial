@@ -1,0 +1,14 @@
+$paleshade: #E6FFE6;
+$textcolor: #293329;
+$linkcolor: 5C995C;
+$helvetica: 
+
+body	{background: $paleshade; color: $textcolor;}
+p 	{
+	font:	{
+		size: 2em;
+		weight: bold;
+		style: italic;
+		family: $helvetica;
+	}
+}
