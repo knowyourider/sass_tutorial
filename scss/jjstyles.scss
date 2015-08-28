@@ -4,15 +4,53 @@ $paleshade: #E6FFE6;
 $textcolor: #293329;
 $linkcolor: #5C995C;
 $linkhover: red;
+$linkvisited: lighten($linkcolor, 30%);
+
+@mixin headstyle	{
+	font 	{
+		family: $font-stack;
+	}
+	margin: 0 0 2em 0;
+	text-transform: uppercase;
+	color: lighten($textcolor, 20%);
+} 
 
 //this is a comment that only appears in the scss file, not the css
 /* this comment appears in both files! */
 
+////////// GRID
+
+// 2nd math example
+$container-width: 100%;
+$column-count: 4;
+$margin: 1%;
+
+.container {
+  width: $container-width;
+  clear: left;
+}
+
+.column {
+  border: thin solid green;
+  background: darken($paleshade, 5%);
+  height: auto;
+  display: block;
+  float: left;
+  width: ($container-width / $column-count) - ($margin * 4);
+  margin: $margin;
+  padding: 8px;
+}
+
+///////// APPEARANCE
 
 body	{background: $paleshade; color: $textcolor;}
+
+h1, h2, h3	{
+	@include headstyle;
+}
 p 	{
 	font:	{
-		size: 2em;
+		size: 1em;
 		weight: bold;
 		style: italic;
 		family: $font-stack;
@@ -27,5 +65,9 @@ a	{
 	&:hover	{
 	background: $linkhover;
 	text-decoration: underline;
+	}
+
+	&:visited	{
+	color: $linkvisited;
 	}
 }
