@@ -1,8 +1,13 @@
-@import "bourbon/bourbon"
 
+$font-stack: Helvetica, sans-serif;
 $paleshade: #E6FFE6;
 $textcolor: #293329;
-$linkcolor: 5C995C;
+$linkcolor: #5C995C;
+$linkhover: red;
+
+//this is a comment that only appears in the scss file, not the css
+/* this comment appears in both files! */
+
 
 body	{background: $paleshade; color: $textcolor;}
 p 	{
@@ -10,6 +15,17 @@ p 	{
 		size: 2em;
 		weight: bold;
 		style: italic;
-		family: $helvetica;
+		family: $font-stack;
+	}
+}
+
+a	{
+	font-weight: bold;
+	text-decoration: none;
+	color: $linkcolor;
+
+	&:hover	{
+	background: $linkhover;
+	text-decoration: underline;
 	}
 }
