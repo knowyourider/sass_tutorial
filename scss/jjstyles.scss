@@ -1,14 +1,17 @@
 
+@import "../css/normalize.css";
+
 $font-stack: Helvetica, sans-serif;
 $paleshade: #E6FFE6;
 $textcolor: #293329;
 $linkcolor: #5C995C;
-$linkhover: red;
+$linkhover: magenta;
 $linkvisited: lighten($linkcolor, 30%);
 
 @mixin headstyle	{
 	font 	{
 		family: $font-stack;
+		size: .5em;
 	}
 	margin: 0 0 2em 0;
 	text-transform: uppercase;
@@ -43,7 +46,7 @@ $margin: 1%;
 
 ///////// APPEARANCE
 
-body	{background: $paleshade; color: $textcolor;}
+body	{background: $paleshade; color: $textcolor; padding: 2%;}
 
 h1, h2, h3	{
 	@include headstyle;
@@ -52,7 +55,6 @@ p 	{
 	font:	{
 		size: 1em;
 		weight: bold;
-		style: italic;
 		family: $font-stack;
 	}
 }
