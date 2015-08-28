@@ -1,4 +1,12 @@
 @import url(../css/normalize.css);
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
 /* this comment appears in both files! */
 .container {
   width: 100%;
