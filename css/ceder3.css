@@ -1,14 +1,12 @@
 header[role="banner"] {
   margin: 20px 0 30px 0;
-  border-bottom: 4px solid #333 #logo;
-    border-bottom-float: left;
-    border-bottom-margin: 0 20px 0 0;
-  /*
-  img {
-  	display: block;
-  	opacity: .95;
-  }
-  */ }
+  border-bottom: 4px solid #333; }
+  header[role="banner"] #logo {
+    float: left;
+    margin: 0 20px 0 0; }
+    header[role="banner"] #logo img {
+      display: block;
+      opacity: .95; }
   header[role="banner"] h1 {
     padding: 15px 0;
     font-size: 54px;
