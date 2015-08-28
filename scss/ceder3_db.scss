@@ -1,0 +1,36 @@
+header[role="banner"] {
+	margin: 20px 0 30px 0;
+	border-bottom: 4px solid #333;
+
+	#logo {
+		float: left;
+		margin: 0 20px 0 0;
+
+		img {
+			display: block;
+			opacity: .95;
+		}		
+	}
+
+	h1 {
+		padding: 15px 0;
+		font: {
+			size: 54px;
+			family: Jubilat, Georgia, serif;
+			weight: bold;
+		}
+		line-height: 1;
+	}
+}
+
+a {
+	font-weight: bold;
+	text-decoration: none;
+	color: red;
+	border-bottom: 2px solid red;
+	a:hover {
+		color: maroon;
+		border-color: maroon;
+	}
+}
+

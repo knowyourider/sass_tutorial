@@ -1,0 +1,32 @@
+header[role="banner"] {
+  margin: 20px 0 30px 0;
+  border-bottom: 4px solid #333;
+}
+header[role="banner"] #logo {
+  float: left;
+  margin: 0 20px 0 0;
+}
+header[role="banner"] #logo img {
+  display: block;
+  opacity: .95;
+}
+header[role="banner"] h1 {
+  padding: 15px 0;
+  font-size: 54px;
+  font-family: Jubilat, Georgia, serif;
+  font-weight: bold;
+  line-height: 1;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: red;
+  border-bottom: 2px solid red;
+}
+a a:hover {
+  color: maroon;
+  border-color: maroon;
+}
+
+/*# sourceMappingURL=ceder3_db.css.map */
