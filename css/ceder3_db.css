@@ -1,0 +1,13 @@
+header[role="banner"] {
+  margin: 20px 0 30px 0;
+  border-bottom: 4px solid #333 #logo;
+    border-bottom-float: left;
+    border-bottom-margin: 0 20px 0 0; }
+  header[role="banner"] h1 {
+    padding: 15px 0;
+    font-size: 54px;
+    line-height: 1;
+    font-family: Jubilat, Georgia, serif;
+    font-weight: bold; }
+
+/*# sourceMappingURL=ceder3_db.css.map */
