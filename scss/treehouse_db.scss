@@ -4,7 +4,7 @@
 // juliet will tell me about reset.scss
 
 #main{
-    @inlcude outer-container();
+    @inlcude outer-container(1920px);
     background-color: #333;
 }
 
@@ -43,4 +43,11 @@
     background-color: indigo;
     @include span-columns(4 of 12);
     @include shift(8 of 12);
+}
+
+#red, #orange, #yellow, #green, #blue, #indigo {
+    @media screen and (max-width: 768px){
+        @include span-columns(12 of 12);
+        @include shift(0 of 12);
+    }
 }

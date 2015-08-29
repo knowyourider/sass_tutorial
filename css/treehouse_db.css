@@ -7,7 +7,7 @@ html {
 }
 
 #main {
-  @inlcude outer-container();
+  @inlcude outer-container(1920px);
   background-color: #333;
 }
 
@@ -106,6 +106,19 @@ html {
 }
 #indigo:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #red, #orange, #yellow, #green, #blue, #indigo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-left: 0%;
+  }
+  #red:last-child, #orange:last-child, #yellow:last-child, #green:last-child, #blue:last-child, #indigo:last-child {
+    margin-right: 0;
+  }
 }
 
 /*# sourceMappingURL=treehouse_db.css.map */
