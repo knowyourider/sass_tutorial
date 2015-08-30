@@ -24,9 +24,30 @@ a {
   color: red;
   border-bottom: 2px solid red;
 }
-a a:hover {
+a:hover {
   color: maroon;
   border-color: maroon;
+}
+
+li a {
+  color: blue;
+}
+li a.alert {
+  color: red;
+}
+li a.success {
+  color: green;
+}
+
+section.main h2 {
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  color: #357;
+}
+section.main h2 font {
+  family: font-serif;
+  size: 20px;
+  weight: bold;
 }
 
 /*# sourceMappingURL=ceder3_db.css.map */
