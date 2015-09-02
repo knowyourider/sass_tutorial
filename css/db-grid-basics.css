@@ -9,6 +9,13 @@ html {
 
 body {
   font: 100% "Helvetica Neue", Helvetica, Arial, sans-serif;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+}
+body:last-child {
+  margin-right: 0;
 }
 
 header {
@@ -16,7 +23,72 @@ header {
   margin-bottom: 20px;
 }
 
-main {
+header img.logo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+}
+header img.logo:last-child {
+  margin-right: 0;
+}
+
+.banner {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+}
+.banner:last-child {
+  margin-right: 0;
+}
+
+.banner nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.banner nav ul li {
+  float: left;
+  margin: 0 5px 0 0;
+}
+
+.banner nav ul li a {
+  display: block;
+  padding: .5em 2em .5em 0;
+  color: #597485;
+}
+
+.banner nav ul li a:hover {
+  color: white;
+}
+
+.banner nav ul li ul {
+  display: none;
+}
+
+.banner nav ul li:hover ul, .banner nav ul li.hover ul {
+  position: absolute;
+  display: inline;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.banner nav ul li:hover li {
+  float: left;
+}
+
+.banner nav ul li:hover li a {
+  color: #597485;
+}
+
+.banner nav ul li li a:hover {
+  color: white;
+}
+
+section.main {
   margin-bottom: 20px;
 }
 
@@ -26,7 +98,7 @@ footer {
 }
 
 .page-width {
-  max-width: 1200px;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
   border: thin solid green;
