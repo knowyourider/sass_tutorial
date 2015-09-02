@@ -41,17 +41,16 @@ header img.logo:last-child {
 .banner:last-child {
   margin-right: 0;
 }
-
 .banner nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 .banner nav ul li {
   float: left;
   margin: 0 5px 0 0;
 }
-
 .banner nav ul li a {
   display: block;
   padding: .5em 2em .5em 0;
@@ -117,7 +116,7 @@ aside.boxes {
 aside.boxes:last-child {
   margin-right: 0;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   aside.boxes {
     float: left;
     display: block;
@@ -139,7 +138,7 @@ aside.boxes:last-child {
 #content:last-child {
   margin-right: 0;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   #content {
     float: left;
     display: block;
@@ -173,6 +172,23 @@ ul.menu li:nth-child(4n) {
 }
 ul.menu li:nth-child(4n+1) {
   clear: left;
+}
+@media screen and (max-width: 1000px) {
+  ul.menu li {
+    float: left;
+    display: block;
+    margin-right: 3.57866%;
+    width: 48.21067%;
+  }
+  ul.menu li:last-child {
+    margin-right: 0;
+  }
+  ul.menu li:nth-child(2n) {
+    margin-right: 0;
+  }
+  ul.menu li:nth-child(2n+1) {
+    clear: left;
+  }
 }
 ul.menu li h4 {
   font-size: 1.25em;
