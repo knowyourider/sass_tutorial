@@ -3,6 +3,7 @@
 @import "libraries/neat/neat.scss";
 
 $font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$mobile: new-breakpoint(max-width 800px 4);
 
 $paleblue: #dee3e7;
 $teal: #597485;
@@ -16,29 +17,27 @@ body    {
 header  {
     background-color: $paleblue;
     margin-bottom: 20px;
-}
 
-header img.logo {
-    @include span-columns(2);
+    img.logo {
+        @include span-columns(2);
+    }
 }
 
 .banner {
     @include span-columns(10);
 }
 
-.banner nav  {
-}
-
-.banner nav ul  {
+.banner nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+
+    li {
+        float: left;
+        margin: 0 5px 0 0;
+    }
 }
 
-.banner nav ul li {
-    float: left;
-    margin: 0 5px 0 0;
-}
 
 .banner nav ul li a {
     display: block;
@@ -93,11 +92,19 @@ footer  {
 aside.boxes {
     @include span-columns(4);
     border: thin solid blue;
+
+    @include media($mobile) {
+      @include span-columns(4);
+    }
 }
 
 #content {
     @include span-columns(8);
     border: thin solid red;
+
+    @include media($mobile) {
+      @include span-columns(4);
+    }
 }
 
 ul.menu {
