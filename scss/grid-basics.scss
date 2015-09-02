@@ -10,6 +10,7 @@ $darkblue: #022b61;
 
 body    {
     font: 100% $font-stack;
+    @include span-columns(12);
 }
 
 header  {
@@ -17,7 +18,63 @@ header  {
     margin-bottom: 20px;
 }
 
-main {
+header img.logo {
+    @include span-columns(2);
+}
+
+.banner {
+    @include span-columns(10);
+}
+
+.banner nav  {
+}
+
+.banner nav ul  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.banner nav ul li {
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+.banner nav ul li a {
+    display: block;
+    padding: .5em 2em .5em 0;
+    color: $teal;
+}
+
+.banner nav ul li a:hover {
+    color: white;
+}
+
+.banner nav ul li ul {
+    display: none;
+}
+
+.banner nav ul li:hover ul, .banner nav ul li.hover ul {
+    position: absolute;
+    display: inline;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.banner nav ul li:hover li {
+    float: left;
+}
+
+.banner nav ul li:hover li a {
+    color: $teal;
+}
+
+.banner nav ul li li a:hover {
+    color: white;
+}
+
+section.main {
     margin-bottom: 20px;
 }
 
@@ -28,7 +85,7 @@ footer  {
 
 // to contain page contents
 .page-width{
-    @include outer-container(1200px);
+    @include outer-container(90%);
     border: thin solid green;
 }
 
@@ -61,6 +118,3 @@ ul.menu li h4   {
     letter-spacing: 1px;
     color: white; 
 }
-
-
-
