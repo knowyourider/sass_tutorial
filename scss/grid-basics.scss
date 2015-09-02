@@ -1,0 +1,66 @@
+@import "../css/normalize.css";
+@import "libraries/bourbon/bourbon";
+@import "libraries/neat/neat.scss";
+
+$font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$paleblue: #dee3e7;
+$teal: #597485;
+$darkblue: #022b61;
+
+body    {
+    font: 100% $font-stack;
+}
+
+header  {
+    background-color: $paleblue;
+    margin-bottom: 20px;
+}
+
+main {
+    margin-bottom: 20px;
+}
+
+footer  {
+    background-color: $darkblue;
+    color: white;
+}
+
+// to contain page contents
+.page-width{
+    @include outer-container(1200px);
+    border: thin solid green;
+}
+
+// for left column of stacked boxes
+aside.boxes {
+    @include span-columns(4);
+    border: thin solid blue;
+}
+
+#content {
+    @include span-columns(8);
+    border: thin solid red;
+}
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.menu li {
+    @include span-columns(2 of 8);
+    @include omega(4n);
+    margin-bottom: 2em;
+    height: 225px;
+    background-color: #899ba7;
+}
+ul.menu li h4   {
+    font-size: 1.25em;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: white; 
+}
+
+
+

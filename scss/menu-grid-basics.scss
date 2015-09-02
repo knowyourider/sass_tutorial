@@ -9,15 +9,18 @@ $teal: #597485;
 $darkblue: #022b61;
 
 body    {
-    padding: 1%;
     font: 100% $font-stack;
 }
-
-#main{
-    @include outer-container(1900px);
+header  {
+    background-color: $paleblue;
 }
 
-#top-row{
+// to contain page contents
+.page-width{
+    @include outer-container(1200px);
+}
+
+#banner{
     @include span-columns(12);
 }
 
@@ -26,20 +29,26 @@ body    {
     @include span-columns(12 of 12);
 }
 
-#main-content{
+.page-content{
     @include span-columns(12);
     padding-top: 20px;
 }
 
-#side-box   {
+// for left column of stacked boxes
+aside.boxes {
     @include span-columns(4 of 12);
+}
+
+.side-box   {
     background-color: $paleblue;
     padding: 0 1.25em 1em 1.25em;
     border-radius: 25px;
+    margin: 0 0 20px 0;
 }
 
-#page-area  {
+#primary-content {
     @include span-columns(8 of 12);
+    border: thin solid red;
 }
 
 #bottom-row {
@@ -63,7 +72,7 @@ ul.menu {
     margin-top: 0;
 }
 ul.menu li {
-    @include span-columns(2);
+    @include span-columns(2 of 8);
     margin-bottom: 2em;
     margin-right: 1em;
     padding: 1em;
@@ -80,6 +89,7 @@ ul.menu li h4   {
 }
 ul.menu img.img-responsive  {
     /*box-shadow: 5px 5px 0px #cbcbcb;*/
+    max-width: 100%;
 }
 ul.menu li a:link   {
 }
